@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloth Gallery</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-images"></i> Cloth Gallery</h1>
+
+    <!-- Center-aligned button -->
+    <div class="button-container">
+      <a href="/" class="btn"><i class="fas fa-upload"></i> Upload New Item</a>
+    </div>
+
+    <div class="gallery">
+      <% items.forEach((item) => { %>
+        <div class="card">
+          <div class="image-grid">
+            <% item.imageUrls.forEach((imageUrl) => { %>
+              <img src="<%= imageUrl %>" alt="Cloth Image" class="gallery-image">
+            <% }) %>
+          </div>
+          <h2><%= item.title %></h2>
+          <p><strong>Type:</strong> <%= item.listingType %></p>
+          <p><strong>Category:</strong> <%= item.category %></p>
+          <p><strong>Size:</strong> <%= item.size %></p>
+          <p><strong>Condition:</strong> <%= item.condition %></p>
+          <p><strong>Price:</strong> $<%= item.price %></p>
+          <p><strong>Brand:</strong> <%= item.brand || "N/A" %></p>
+          <p><strong>Color:</strong> <%= item.color %></p>
+          <p><strong>Material:</strong> <%= item.material || "N/A" %></p>
+          <p><strong>Description:</strong> <%= item.description %></p>
+        </div>
+      <% }) %>
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

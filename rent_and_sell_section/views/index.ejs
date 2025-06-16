@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Cloth</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-tshirt"></i> Upload Cloth for Sale/Rent</h1>
+
+    <!-- Center-aligned button -->
+    <div class="button-container">
+      <a href="/gallery" class="btn"><i class="fas fa-images"></i> View Uploaded Items</a>
+    </div>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="itemImages"><i class="fas fa-images"></i> Upload Images:</label>
+        <input type="file" name="itemImages" id="itemImages" multiple required>
+        <small>Upload up to 5 images (front, back, details, etc.)</small>
+      </div>
+
+      <div class="form-group">
+        <label for="title"><i class="fas fa-tag"></i> Title/Name of Item:</label>
+        <input type="text" name="title" id="title" placeholder="e.g., Black Formal Dress" required>
+      </div>
+
+      <div class="form-group">
+        <label><i class="fas fa-list"></i> Type of Listing:</label>
+        <div>
+          <input type="radio" name="listingType" id="forSale" value="For Sale" required>
+          <label for="forSale">For Sale</label>
+          <input type="radio" name="listingType" id="forRent" value="For Rent" required>
+          <label for="forRent">For Rent</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="category"><i class="fas fa-layer-group"></i> Category:</label>
+        <select name="category" id="category" required>
+          <option value="">Select a category</option>
+          <option value="Dress">Dress</option>
+          <option value="Shirt">Shirt</option>
+          <option value="Pants">Pants</option>
+          <option value="Shoes">Shoes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="size"><i class="fas fa-ruler"></i> Size:</label>
+        <select name="size" id="size" required>
+          <option value="">Select a size</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="condition"><i class="fas fa-star"></i> Condition:</label>
+        <select name="condition" id="condition" required>
+          <option value="">Select condition</option>
+          <option value="New">New</option>
+          <option value="Used - Like New">Used - Like New</option>
+          <option value="Used - Good">Used - Good</option>
+          <option value="Used - Fair">Used - Fair</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="price"><i class="fas fa-dollar-sign"></i> Price ($):</label>
+        <input type="number" name="price" id="price" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="brand"><i class="fas fa-trademark"></i> Brand (Optional):</label>
+        <input type="text" name="brand" id="brand" placeholder="e.g., Nike, Zara, etc.">
+      </div>
+
+      <div class="form-group">
+        <label for="color"><i class="fas fa-palette"></i> Primary Color:</label>
+        <input type="text" name="color" id="color" placeholder="e.g., Black, Navy Blue, etc." required>
+      </div>
+
+      <div class="form-group">
+        <label for="material"><i class="fas fa-cut"></i> Material (Optional):</label>
+        <input type="text" name="material" id="material" placeholder="e.g., Cotton, Silk, Polyester">
+      </div>
+
+      <div class="form-group">
+        <label for="description"><i class="fas fa-align-left"></i> Detailed Description:</label>
+        <textarea name="description" id="description" rows="5" placeholder="Describe your item in detail. Include any flaws, special features, etc." required></textarea>
+      </div>
+
+      <button type="submit"><i class="fas fa-upload"></i> Upload My Item</button>
+    </form>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
