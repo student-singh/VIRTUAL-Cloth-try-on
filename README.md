@@ -46,3 +46,13 @@ Virtual Closet addresses the current limitations of online clothing shopping by 
    PDF Parsing (if applicable): pdfplumber, PyMuPDF
    Virtual Try-On: OpenCV, cvzone, MediaPipe
    Browser Extension: JavaScript, Chrome Extension APIs
+
+   ![Screenshot (403)](https://github.com/user-attachments/assets/d0fc9b7e-9068-41ac-be71-0840ab839b70)
+![Screenshot (404)](https://github.com/user-attachments/assets/b0785332-5900-455c-8e80-5bbcc8527d78)
+
+![Screenshot (401)](https://github.com/user-attachments/assets/aff7b5c7-af1e-4f1b-8244-0ca77877cfb9)
+![Screenshot (407)](https://github.com/user-attachments/assets/42fc3f6d-edc2-44e2-87d8-bee515f944ea)![Screenshot (408)](https://github.com/user-attachments/assets/1b9d9619-ddc0-40b3-a57d-5098f42daccf)
+
+![Screenshot 2025-06-16 123257](https://github.com/user-attachments/assets/53bdb1be-b1a0-4085-89bd-51ff30d25259)
+![image](https://github.com/user-attachments/assets/6e5ed4c0-11d1-4743-8026-63efac269376)
+![Screenshot 2025-06-16 123236](https://github.com/user-attachments/assets/0fe8343e-2226-4ea2-9175-09fa26e7ac41)
